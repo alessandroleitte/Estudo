@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: oswald, sans-serif;
+}
+.back{
+	width: 55%;
+	height: 100%;
+	background-image: url("../imagens/download.jpeg");
+	background-size: 100% 100%;
+	background-position: center center;
+	position: absolute;
+	display: inline;
+}
+.cookie{
+	position: fixed;
+	width: 55%;
+	bottom: 0;
+	left: 0;
+	display: flex;
+}
+.cookie img{
+	padding: 20px;
+	width: 50px;
+	height: 50px;
+}
+.cookie img:hover{
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	transition: 0.5s;
+}
+.container{
+	width: 450px;
+	height: 100vh;
+	margin: 0 60vw;
+}
+.container img{
+	padding: 15%;
+	width: 300px;
+	margin: 20px 0;
+}
+.logo h2{
+	color: #49157f;
+}
+input{
+	width: 80%;
+	margin: 10px;
+	padding: 20px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 2px solid black;
+	border-radius: 10px;
+	background-color: #f5f5f5;
+	font-size: 1em;
+	color: black;
+}
+.nsenha{
+	width: 90%;
+	text-align: right;
+	color:  #49157f;
+}
+.nsenha a{
+	color:  #7c1db4;
+	font-size: 1.2em;
+}
+.check{
+	width: 50vw;
+	max-width: 500px;
+	min-width: 200px;
+	padding-right: 20%;
+	display: flex;
+	margin: 50px -10px;
+	gap: 20px;
+	width: 200px;
+	align-items: center;
+}
+.check input[type=checkbox]:hover{
+	cursor: pointer;
+}
+.check label:hover{
+	cursor: pointer;
+}
+.check input[type=checkbox]{
+	-webkit-appearance: none;
+	margin-left: 30px;
+	margin-right: -10px;
+	width: 20px;
+	height: 20px;
+	border:2px solid #7c1db4;
+}
+.check input[type=checkbox]:checked{
+	background-color: #7c1db4;;
+}
+label{
+	width: auto;
+	white-space: nowrap;
+}
+
+.continuar{
+	background-color: #7c1db4;
+	width: 200px;
+	height: 50px;
+	border-radius: 50px;
+	margin: 10px;
+	color: white;
+	border: none;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+.continuar:hover{
+	cursor: pointer;
+}
+.continuar:active{
+	background-color: white;
+	color: #8a4dad;
+	transition: 0.5;
+}
+.primeiro{
+	color: #7c1db4;
+	width: 200px;
+	height: 50px;
+	border-radius: 50px;
+	margin: 10px;
+	border-color: #7c1db4;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+.primeiro:hover{
+	cursor: pointer;
+}
+.primeiro:active{
+	background-color: #8a4dad;
+	color: white;
+	transition: 0.5;
+}
+
+@media (max-width: 1080px){
+	.container{
+		width: 55vw;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.container img{
+		margin: 0 auto;
+		padding-left: 0;
+		padding-bottom: 30px;
+	}
+	.continuar{
+	margin: 0;
+	}
+	.check{
+	margin: 20px;
+	}
+	.back{
+		background-image: none;
+	}
+}
