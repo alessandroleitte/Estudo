@@ -8,19 +8,19 @@
     <link rel="shortcut icon" href="imagens/git-foto.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header id="topo">
         <ul id="menu" class="menu">
             <li><a href="#perfil">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#">formação</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#formacao">formação</a></li>
+            <li><a href="#contatos">Contato</a></li>
         </ul>
         <ul class="menu-mobile" id="menu-mobile">
             <li><a href="#perfil"><i class="fa-brands fa-fort-awesome-alt"></i></a></li>
             <li><a href="#skills"><i class="fa-solid fa-brain"></i></a></li>
             <li><a href="#projetos"><i class="fa-solid fa-code"></i></a></li>
-            <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
+            <li><a href="#formacao"><i class="fa-solid fa-graduation-cap"></i></a></li>
             <li><a href="#contatos"><i class="fa-solid fa-address-book"></i></a></li>
         </ul>
     </header>
@@ -28,6 +28,7 @@
     <h2>Em desenvolvimento...  <i class="fa-solid fa-screwdriver-wrench"></i></h2>
 
     <section class="conteudo" id="conteudo">
+
         <section id="perfil" class="perfil">
             <div id="foto-perfil">
                 <img src="imagens/perfil.png" alt="foto de perfil Alessandro Leitte">
@@ -37,6 +38,7 @@
             No meu dia a dia, aplico muito do que venho aprendendo: uso análise de dados para enxergar padrões, tomar decisões melhores e simplificar rotinas; e utilizo conhecimentos de front-end — especialmente HTML, CSS e JavaScript — para criar pequenas soluções que deixam o trabalho mais leve e organizado.</p>
             Este portfólio é um reflexo desse caminho: uma mistura de aprendizado contínuo, curiosidade e vontade de construir coisas que realmente façam diferença.</p>
         </section>
+
         <section class="projetos" id="projetos">
             <h2>Projetos</h2>
             <div class="projeto" id="projeto">
@@ -55,7 +57,8 @@
                 <img src="imagens/x-img.png" alt="imagem do projeto X">
             </div>
         </section>
-        <section class="Skills" id="Skills">
+
+        <section class="skills" id="skills">
             <h2>Skills</h2>
             <ul class="skills-list" id="skills-list">
                 <li>HTML5 <i class="fa-brands fa-html5"></i></li>
@@ -66,7 +69,24 @@
                 <li>Comunicação <i class="fa-solid fa-comment-dollar"></i></li>
                 <li>Trabalho em equipe <i class="fa-solid fa-user-group"></i></li>
             </ul>
+
+            <div id="formacao" class="formacao">
+                <h2>Formação</h2>
+                <div>
+                    <p>Análise e desenvolvimento de sistemas</p>
+                    <p>Estácio 2023</p>
+                    <img src="imagens/estacio.png">
+                </div>
+                <div>
+                    <p>MBA Executivo em Gestão Empresarial</p>
+                    <p>Unip 2024</p>
+                    <img src="imagens/unip.png">
+                </div>
+            </div>
         </section>
+            
+        
+
     </section>
 
     <footer id="contatos">
@@ -76,5 +96,18 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/03afb959fd.js" crossorigin="anonymous"></script>
+    <script>
+        
+        window.addEventListener('scroll', function() {
+
+            const header = document.getElementById("topo");
+
+                if (window.scrollY > 10) {
+                    header.classList.add("scrolled");
+                }else{
+                    header.classList.remove("scrolled");
+                }
+        });
+    </script>
 </body>
 </html>

@@ -16,8 +16,15 @@
 header {
   width: 100%;
   height: 60px;
-  background-color: var(--fundo-escuro);
+  background-color: var(--fundo-claro);
+  position: fixed;
+  top: 0;
+  transition: opacity 0.4s ease-in-out;
 }
+header.scrolled {
+  opacity: 0.8;
+}
+
 #menu {
   display: none;
 }
@@ -42,15 +49,23 @@ header {
   border-bottom: 2px solid var(--border-hover);
 }
 body {
-  background-color: var(--fundo-claro);
+  background: var(--fundo-escuro);
   color: var(--fonte-principal);
   font-family: cursive;
 }
-body h2 {
+body > h2 {
   text-align: left;
-  margin: 20px;
+  margin: 65px 0 20px 20px;
   color: var(--links-cor);
+  text-shadow: 1px 1px var(--fundo-claro);
 }
+.conteudo h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--links-cor);
+  text-shadow: 1px 1px var(--fundo-claro);
+}
+
 #perfil {
   display: flex;
   flex-direction: column;
@@ -61,23 +76,27 @@ body h2 {
   padding: 20px;
   text-indent: 20px;
   width: 90%;
-  background-color: white;
+  background-color: var(--fundo-escuro);
   border-radius: 10px;
   margin: 10px auto 10px auto;
+  color: var(--fundo-claro);
+  box-shadow: 1px 2px 10px var(--fundo-claro);
 }
 #perfil > h3 {
   margin: 20px 0;
   font-size: 25px;
   text-align: left;
   text-indent: 0;
+  color: white;
 }
 #foto-perfil > img {
   width: 200px;
   height: auto;
   border-radius: 100px;
   margin-bottom: 20px;
-  border: 4px solid var(--border);
+  outline: 4px solid var(--border-hover);
 }
+
 
 .projetos {
   width: 90%;
@@ -86,34 +105,32 @@ body h2 {
   gap: 20px;
   grid-template-rows: auto auto auto;
   justify-content: center;
-  background-color: white;
+  background-color: var(--fundo-escuro);
   border-radius: 10px;
   padding: 20px;
+  box-shadow: 1px 2px 10px var(--fundo-claro);
 }
-.projetos h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: var(--links-cor);
-}
+
 .projeto {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: var(--border);
+  background-color: var(--fundo-claro);
   border-radius: 10px;
   padding: 10px;
 }
 .projeto a {
   text-decoration: none;
-  color: white;
+  color: var(--border);
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.5s;
 }
 .projeto a:hover {
   cursor: pointer;
-  color: var(--link);
+  color: var(--border-hover);
+
 }
 .projeto > img {
   width: 80%;
@@ -124,12 +141,6 @@ body h2 {
   width: 90%;
   margin: 20px auto;
   padding: 20px;
-}
-.skills h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: var(--links-cor);
-  
 }
 #skills-list {
   list-style: none;
@@ -145,19 +156,44 @@ body h2 {
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
+  transition: background 0.5s;
+  box-shadow: 1px 2px 5px var(--fundo-claro);
+}
+#skills-list li:hover{
+  background-color: var(--border-hover);
+}
+
+#formacao{
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+  text-align: center;
+  background-color: var(--border);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 1px 2px 10px var(--fundo-claro);
+}
+#formacao > h2{
+  color: white;
+  text-shadow: 3px 3px var(--fundo-escuro);
+}
+
+#formacao img{
+  width: 50px;
+  height: auto;
 }
 
 footer {
-  color: antiquewhite;
+  color: var(--border);
   text-align: center;
   padding: 20px;
-  background-color: var(--fundo-escuro);
+  background-color: var(--fundo-claro);
 }
 footer p {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 footer img {
-  width: 80px;
+  width: 50px;
   height: auto;
   border-radius: 50px;
 }
@@ -186,11 +222,13 @@ footer img {
     border-bottom: 2px solid var(--border-hover);
   }
   #conteudo {
-    width: 100vw;
+    width: 95vw;
     display: grid;
     grid-template-columns: 300px auto 300px;
     align-items: start;
-    gap: 5px;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
     margin-bottom: 30px;
   }
   #perfil {
@@ -215,7 +253,11 @@ footer img {
   #skills {
     grid-column: 3 / 4;
     width: 100%;
-    height: auto;
     margin: 0;
+  }
+  #formacao{
+    grid-column: 3 / 4;
+    width: 100%;
+    align-self: center;
   }
 }
