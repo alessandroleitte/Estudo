@@ -97,7 +97,6 @@ body > h2 {
   outline: 4px solid var(--border-hover);
 }
 
-
 .projetos {
   width: 90%;
   margin: 20px auto;
@@ -130,7 +129,6 @@ body > h2 {
 .projeto a:hover {
   cursor: pointer;
   color: var(--border-hover);
-
 }
 .projeto > img {
   width: 80%;
@@ -159,11 +157,11 @@ body > h2 {
   transition: background 0.5s;
   box-shadow: 1px 2px 5px var(--fundo-claro);
 }
-#skills-list li:hover{
+#skills-list li:hover {
   background-color: var(--border-hover);
 }
 
-#formacao{
+#formacao {
   width: 90%;
   height: auto;
   margin: 10px auto;
@@ -173,12 +171,12 @@ body > h2 {
   color: white;
   box-shadow: 1px 2px 10px var(--fundo-claro);
 }
-#formacao > h2{
+#formacao > h2 {
   color: white;
   text-shadow: 3px 3px var(--fundo-escuro);
 }
 
-#formacao img{
+#formacao img {
   width: 50px;
   height: auto;
 }
@@ -196,6 +194,11 @@ footer img {
   width: 50px;
   height: auto;
   border-radius: 50px;
+  transition: transform 0.3s;
+}
+footer img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 @media (min-width: 768px) {
@@ -222,9 +225,9 @@ footer img {
     border-bottom: 2px solid var(--border-hover);
   }
   #conteudo {
-    width: 95vw;
+    width: 98vw;
     display: grid;
-    grid-template-columns: 300px auto 300px;
+    grid-template-columns: auto 300px;
     align-items: start;
     justify-content: center;
     gap: 10px;
@@ -234,28 +237,31 @@ footer img {
   #perfil {
     grid-column: 1 / 2;
     width: 100%;
+    max-width: 600px;
     height: auto;
-    margin: 0;
-    align-items: center;
-    justify-content: start;
+    margin: 0 auto;
   }
   #projetos {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     display: grid;
     grid-template-columns: auto auto;
     margin: 0;
     width: 100%;
+    max-width: 800px;
     height: auto;
   }
-  #projetos h2{
+  #projetos h2 {
     grid-column: 1 / 3;
   }
   #skills {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
+    grid-row: -1 / auto;
     width: 100%;
     margin: 0;
+    align-self: start;
+    justify-self: start;
   }
-  #formacao{
+  #formacao {
     grid-column: 3 / 4;
     width: 100%;
     align-self: center;
