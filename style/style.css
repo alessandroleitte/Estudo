@@ -13,45 +13,17 @@
   --border: #30425c;
   --border-hover: #2f5486;
 }
-header {
-  width: 100%;
-  height: 60px;
-  background-color: var(--fundo-claro);
-  position: fixed;
-  top: 0;
-  transition: opacity 0.4s ease-in-out;
-}
-header.scrolled {
-  opacity: 0.8;
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-#menu {
-  display: none;
-}
-#menu-mobile {
-  display: flex;
-  gap: 15px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  padding: 10px 20px;
-  list-style: none;
-  unicode-bidi: isolate;
-  font-size: 30px;
-}
-#menu-mobile li a {
-  transition: all 0.3s ease-in-out;
-}
-#menu-mobile i {
-  color: var(--links-cor);
-}
-#menu-mobile li a:hover {
-  border-bottom: 2px solid var(--border-hover);
-}
 body {
   background: var(--fundo-escuro);
   color: var(--fonte-principal);
-  font-family: cursive;
+  font-family: "Montserrat", sans-serif;
 }
 body > h2 {
   text-align: left;
@@ -76,10 +48,10 @@ body > h2 {
   padding: 20px;
   text-indent: 20px;
   width: 90%;
-  background-color: var(--fundo-escuro);
+  background-color: var(--fundo-claro);
   border-radius: 10px;
   margin: 10px auto 10px auto;
-  color: var(--fundo-claro);
+  color: var(--fundo-escuro);
   box-shadow: 1px 2px 10px var(--fundo-claro);
 }
 #perfil > h3 {
@@ -107,9 +79,12 @@ body > h2 {
   background-color: var(--fundo-escuro);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 1px 2px 10px var(--fundo-claro);
-}
 
+}
+.projetos i{
+  font-size: 1.5em;
+  margin: 10px 0;
+}
 .projeto {
   display: flex;
   flex-direction: column;
@@ -119,7 +94,29 @@ body > h2 {
   background-color: var(--fundo-claro);
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 1px 2px 10px var(--fundo-claro);
 }
+.main-projeto{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+.main-projeto a{
+    text-decoration: none;
+    color: var(--link-destacado);
+}
+.projeto iframe, .projeto img{
+    width: 100%;
+    height: 400px;
+}
+.main-projeto:nth-of-type(3){
+  width: 60%;
+  margin: 0 auto;
+}
+.main-projeto:nth-of-type(3) img{
+    width: 60px;
+    height: 50px;
+  }
 .projeto a {
   text-decoration: none;
   color: var(--border);
@@ -202,68 +199,66 @@ footer img:hover {
 }
 
 @media (min-width: 768px) {
-  #menu-mobile {
-    display: none;
-  }
-  #menu {
-    display: flex;
-    gap: 30px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    list-style: none;
-    unicode-bidi: isolate;
-    font-size: 20px;
-  }
-  #menu li a {
-    transition: all 0.3s ease-in-out;
-    color: var(--links-cor);
-    text-decoration: none;
-  }
-  #menu li a:hover {
-    border-bottom: 2px solid var(--border-hover);
-  }
+
   #conteudo {
-    width: 98vw;
+    width: 98%;
     display: grid;
-    grid-template-columns: auto 300px;
-    align-items: start;
-    justify-content: center;
-    gap: 10px;
+    grid-template-columns: 300px auto;
+    align-items: flex-start;
+    gap: 15px;
     padding: 10px;
     margin-bottom: 30px;
   }
-  #perfil {
-    grid-column: 1 / 2;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin: 0 auto;
+  #perfil, #skills {
+    display: flex;
+    flex-direction: column;
   }
+
   #projetos {
-    grid-column: 1 / 2;
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 0;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-  }
-  #projetos h2 {
-    grid-column: 1 / 3;
-  }
-  #skills {
     grid-column: 2 / 3;
-    grid-row: -1 / auto;
+    display: flex;
+    flex-flow: column wrap;
     width: 100%;
+  }
+
+  #projetos h2{
     margin: 0;
-    align-self: start;
-    justify-self: start;
+    text-align: left;
   }
-  #formacao {
-    grid-column: 3 / 4;
+
+  .main-projeto{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+  }
+  .main-projeto:nth-of-type(3){
+    flex-flow: row;
     width: 100%;
-    align-self: center;
+    height: 200px;
+    overflow: hidden;
+    justify-content: center;
   }
+  .main-projeto:nth-of-type(3)  .projeto{
+    width: 200px;
+    height: 180px;
+  }
+  .main-projeto:nth-of-type(3) img{
+    width: 40px;
+    height: 30px;
+  }
+
+  .projeto{
+    width: 80%;
+    height: 80vh;
+  }
+  .projeto iframe, .projeto img{
+    width: 100%;
+    height: 80%;
+  }
+  .projeto img{
+    width: 80%;
+  }
+
 }
