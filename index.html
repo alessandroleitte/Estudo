@@ -16,52 +16,103 @@
   </head>
   <body>
 
+
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Alessandro Santos</h1>
+          <span>DEV FRONT-END</span>
+        </div>
+        <ul class="menu">
+          <li><a href="#perfil">Sobre mim</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contatos">Contato</a></li>
+        </ul>
+
+        <div class="mobile">
+          <div class="botao-menu"><i class="fa-solid fa-burger"></i></div>
+          <ul class="menu-mobile">
+            <li><a href="#perfil">Sobre mim</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contatos">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+  <main>
+    
+
     <section class="conteudo" id="conteudo">
-      <div class="left">
+      
+      <!-- SOBRE -->
+
+      <div class="sobre">
+
+        <!-- perfil -->
         <section id="perfil" class="perfil">
-          <div id="foto-perfil">
-            <img
-              src="imagens/perfil.png"
-              alt="foto de perfil Alessandro Leitte"
-            />
+
+          <!-- Conteúdo Perfil -->
+          <div class="conteudo-perfil">
+            <div class="foto-perfil">
+              <img
+                src="imagens/perfil-gpt.png"
+                alt="foto de perfil Alessandro Leitte"
+              />
+            </div>
+
+            <p>
+              Sou o <strong>Alessandro Leite dos Santos</strong>,
+              Desenvolvedor front-end e analista de sistemas, focado em criar soluções práticas com HTML, CSS, JavaScript e   análise de dados. Transformo ideias em experiências digitais eficientes e funcionais.
+            </p>
+
+          </div> <!-- Conteúdo Perfil -->
+
+          <div class="icones-perfil">
+            <ul>
+              <li><a href="https://github.com/alessandroleitte" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/alessandro-leite-219bb71b9/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://wa.me/5561993437587" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+              <li><a href="mailto:alessandroleitte@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
           </div>
-          <p>
-            Sou <strong>Alessandro</strong>, formado em Análise de Sistemas e com MBA em Gestão
-            Empresarial. Sempre fui movido pela curiosidade e pela vontade de
-            entender como a tecnologia pode facilitar a vida das pessoas. No meu
-            dia a dia, uso análise de dados e conhecimentos de front-end HTML,
-            CSS e JavaScript para melhorar rotinas, organizar processos e
-            criar soluções práticas que realmente ajudam. Este portfólio reúne
-            um pouco dessa trajetória, marcada por aprendizado constante e pelo
-            prazer de transformar ideias em algo útil e acessível.
-          </p>
-        </section>
+
+          <p style="color: white; margin-top: 15px; font-size: 1.2em;">Em construção <i class="fa-solid fa-screwdriver-wrench"></i></p>
+
+        </section><!-- perfil -->
+
+
+        <h2>Skills</h2>
         <section class="skills" id="skills">
-          <h2>Skills</h2>
+          
           <ul class="skills-list" id="skills-list">
-            <li>HTML5 <i class="fa-brands fa-html5"></i></li>
-            <li>CSS3 <i class="fa-brands fa-css3-alt"></i></li>
-            <li>JavaScript <i class="fa-brands fa-square-js"></i></li>
-            <li>Git e GitHub <i class="fa-brands fa-github"></i></li>
-            <li>Analise de Dados <i class="fa-solid fa-database"></i></li>
-            <li>Comunicação <i class="fa-solid fa-comment-dollar"></i></li>
-            <li>Trabalho em equipe <i class="fa-solid fa-user-group"></i></li>
+            <li class="sombra-clara">HTML5 <i class="fa-brands fa-html5"></i></li>
+            <li class="sombra-clara">CSS3 <i class="fa-brands fa-css3-alt"></i></li>
+            <li class="sombra-clara">JavaScript <i class="fa-brands fa-square-js"></i></li>
+            <li class="sombra-clara">Git e GitHub <i class="fa-brands fa-github"></i></li>
+            <li class="sombra-clara">Analise de Dados <i class="fa-solid fa-database"></i></li>
+            <li class="sombra-clara">Comunicação <i class="fa-solid fa-comment-dollar"></i></li>
+            <li class="sombra-clara">Trabalho em equipe <i class="fa-solid fa-user-group"></i></li>
           </ul>
           <div id="formacao" class="formacao">
-            <h2>Formação</h2>
-            <div>
+            <h3>Formação</h3>
+            <div class="curso sombra-escura">
               <p>Análise e desenvolvimento de sistemas</p>
               <p>Estácio 2023</p>
               <img src="imagens/estacio.png" />
             </div>
-            <div>
+            <div class="curso">
               <p>MBA Executivo em Gestão Empresarial</p>
               <p>Unip 2024</p>
               <img src="imagens/unip.png" />
             </div>
           </div>
-        </section>
-      </div>
+        </section> <!-- Skills  -->
+      </div> <!-- SOBRE -->
+
+
 
       <section class="projetos" id="projetos">
 
@@ -69,18 +120,25 @@
         <div class="main-projeto">
 
             <div class="projeto">
-                <p>Site cartão de visita digital para a Sapataria Rocha, com design responsivo.</p>
-              <a href="https://alessandroleitte.github.io/sapatariarocha/" target="_blank"> <i class="fa-solid fa-link"></i>
-                </a>
-                <iframe src="https://alessandroleitte.github.io/sapatariarocha/" frameborder="0"></iframe>
+              <img src="imagens/sapataria.png" alt="Imagem do site da sapataria rocha">
+              <a href="https://alessandroleitte.github.io/sapatariarocha/" target="_blank">
+              <h3>Sapataria Rocha</h3></a>
+              <span><i class="fa-brands fa-html5"></i></span>
+              <span><i class="fa-brands fa-css3-alt"></i></span>
+              <span><i class="fa-brands fa-js"></i></span>
+              <p>Projeto desenvolvido para a Sapataria Rocha com o objetivo de criar uma presença digital simples, clara e funcional.</p>
+              
             </div>
 
             <div class="projeto">
-                <p>Automação com Google Apps Script que integra Google Forms, Sheets e Gmail.</p>
+              <img src="imagens/formulario.jpeg" alt="Imagem do projeto form to email automation">
               <a href="https://github.com/alessandroleitte/form-to-email-automation" target="_blank">
-                <i class="fa-solid fa-link"></i>
-                </a>
-                <img src="imagens/formulario.png" alt="Postagem do projeto no linkedin">
+              <h3>Form to Email Automation</h3></a>
+              <span><i class="fa-brands fa-html5"><br></i></span>
+              <span><i class="fa-brands fa-css3-alt"></i></span>
+              <span><i class="fa-brands fa-js"></i></span>
+              <p>Projeto criado para automatizar o envio de mensagens de formulários Google diretamente para o e-mail.</p>
+              
             </div>            
 
         </div>
@@ -89,84 +147,64 @@
         <div class="main-projeto">
 
           <div class="projeto">
+              <img src="imagens/skyline.png" alt="Imagem do projeto Nissan Skyline GT-R R34">
+              <a href="https://alessandroleitte.github.io/skyline/" target="_blank">
+              <h3>Nissan Skyline GT-R R34</h3></a>
+              <span><i class="fa-brands fa-html5"></i></span>
+              <span><i class="fa-brands fa-css3-alt"></i></span>
+              <span><i class="fa-brands fa-js"></i></span>
+              <p>Projeto desenvolvido como estudo para explorar design visual e organização de conteúdo, inspirado no icônico Nissan Skyline GT-R R34.</p>
+              
+            </div>
+
+          <div class="projeto">
+              <img src="imagens/testrider.png" alt="imagem do projeto TestRider">
               <a href="https://alessandroleitte.github.io/TestRider/" target="_blank">
-                <p>Site simulando um formulário de cadastros</p></a>
-                <iframe src="https://alessandroleitte.github.io/TestRider/" frameborder="0"></iframe>
-            
+              <h3>TestRider</h3></a>
+              <span><i class="fa-brands fa-html5"></i></span>
+              <span><i class="fa-brands fa-css3-alt"></i></span>
+              <span><i class="fa-brands fa-js"></i></span>
+              <p>Projeto criado como exercício prático para experimentar layouts dinâmicos e navegação interativa, inspirado no universo das motocicletas..</p>
+              
             </div>  
 
-
             <div class="projeto">
+              <img src="imagens/botafogo.png" alt="Imagem do projeto História do Botafogo">
               <a href="https://alessandroleitte.github.io/botafogo/" target="_blank">
-                <p>Site com a história do botafogo</p></a>
-                <iframe src="https://alessandroleitte.github.io/botafogo/" frameborder="0"></iframe>
-            
+              <h3>História do Botafogo</h3></a>
+              <span><i class="fa-brands fa-html5"></i></span>
+              <span><i class="fa-brands fa-css3-alt"></i></span>
+              <span><i class="fa-brands fa-js"></i></span>
+              <p>Projeto temático desenvolvido para praticar criação de layouts responsivos e identidade visual, inspirado no Botafogo de Futebol e Regatas.</p>
+              
             </div>
-
-            <div class="projeto">
-              <a href="https://alessandroleitte.github.io/desafio-android/" target="_blank">
-                <p>Site sobre o android</p></a>
-                <iframe src="https://alessandroleitte.github.io/desafio-android/" frameborder="0"></iframe>
-            
-            </div>
-
-            <div class="projeto">
-              <a href="https://alessandroleitte.github.io/desafio-social/" target="_blank">
-                <p>Site que simula a tela de um celular</p></a>
-                <img src="imagens/fone.png" alt="site telefone">
-            
-            </div>
-
-
-        </div>
-
-        <h2>Clones de Interface</h2>
-        <div class="main-projeto" style="text-align: center;">
-
-            <a href="veloe go/index.html" target="_blank">
-            <div class="projeto">
-                <p> Veloe go</p>
-                <img src="imagens/vgo.png" alt="">
-                <i class="fa-solid fa-eye"></i>
-
-            </div></a>
-
-            <a href="familia.com/index.html" target="_blank">
-            <div class="projeto">
-                <p>familia.com</p>
-                <img src="imagens/casa.png" alt="">
-                <i class="fa-solid fa-eye"></i>
-            </div></a>
-
-            <a href="x/index.html" target="_blank">
-            <div class="projeto">
-                <p>X</p>
-                <img src="imagens/x.png" alt="">
-                <i class="fa-solid fa-eye"></i>
-            </div></a>
 
         </div>
         
       </section>
     </section>
 
+  </main>
+
     <footer id="contatos">
 
-      <p>&copy;Alessandro Leitte / Em desenvolvimento... <i class="fa-solid fa-screwdriver-wrench"></i></p>
-      <a
-        href="https://www.linkedin.com/in/alessandro-leite-219bb71b9/"
-        target="_blank"
-        ><img src="imagens/linkedin.png" alt="icone linkedin"
+      <p>&copy;Alessandro Leitte</p>
+      <a href="https://www.linkedin.com/in/alessandro-leite-219bb71b9/"
+        target="_blank"><img src="imagens/linkedin.png" alt="icone linkedin"
       /></a>
-      <a href="https://github.com/alessandroleitte" target="_blank"
-        ><img src="imagens/logo-github.jpg" alt="icone github"
+      <a href="https://github.com/alessandroleitte" target="_blank"><img src="imagens/github.png" alt="icone github"
       /></a>
+      <a href="https://wa.me/5561993437587" target="_blank"><img src="imagens/whatsapp.png"></i></a>
+      <a href="mailto:alessandroleitte@gmail.com" target="_blank"><img src="imagens/mail.png"></i></a>
 
     </footer>
 
+    <script src="script/script.js"></script>
+    
     <script
       src="https://kit.fontawesome.com/03afb959fd.js"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>
