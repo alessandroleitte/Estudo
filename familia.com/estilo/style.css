@@ -189,7 +189,7 @@ footer a{
 		display: none;
 	}
 	.menu-mobile{
-		display: block;
+		display: none;
 		text-align: center;
 	}
 	.menu-mobile .imagens{
