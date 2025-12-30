@@ -16,6 +16,9 @@
   --border: #30425c;
   --border-hover: #2f5486;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
@@ -105,6 +108,7 @@ header a {
   font-size: 1.1em;
   line-height: 1.3;
   font-weight: bold;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
 }
 
 header a:hover {
@@ -128,6 +132,35 @@ span {
 }
 
 /* HEADER E MENU */
+
+#voltar {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: var(--fundo-escuro);
+  color: var(--highlight);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2em;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+#voltar {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#voltar:hover {
+  transform: scale(1.1);
+  background-color: var(--highlight);
+  color: var(--fundo-escuro);
+}
 
 /* perfil */
 
@@ -251,6 +284,24 @@ span {
 
 /* skills */
 
+
+.botoes-projetos{
+  text-align: center;
+  margin: 20px 0;
+}
+.botoes-projetos button{
+  background-color: var(--fundo-escuro);
+  border-radius: 5px;
+  padding: 0 5px;
+  color: var(--botoes);
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+.botoes-projetos button:hover{
+  background-color: var(--highlight);
+  transition: 0.8s;
+}
+
 /*
 .projetos {
   display: none;
@@ -282,12 +333,15 @@ span {
   color: var(--botoes);
   margin: 15px;
 }
-.projetos a:hover {
+.projetos h3:hover {
+  color: var(--fundo-claro);
+  text-shadow: 2px 2px 5px var(--highlight);
   text-decoration: underline;
+  transition: 0.8s;
 }
 .projetos img{
   width: 100%;
-  height: 40%;
+  height: 50%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -296,7 +350,8 @@ span {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
+  max-width: 500px;
 }
 
 .projeto{
@@ -304,14 +359,19 @@ span {
   margin: 20px 0;
   border-radius: 10px;
   min-height: 350px;
-  padding: 0 5px;
 }
+.projeto:hover{
+  background-color: var(--border-hover);
+  box-shadow: 2px 2px 8px var(--fundo-claro);
+  transition: 0.8s;
+}
+
 /* FOOTER */
 
 footer {
   color: var(--border);
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   background-color: var(--fundo-escuro);
 }
 footer p {
@@ -406,7 +466,26 @@ footer img:hover {
   }
   /* PERFIL */
 
+  /* PROJETOS */
+
+  .projetos{
+    max-width: none;
+  }
+
   .main-projeto {
+    width: 70%;
+    max-width: none;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .main-projeto img{
+    height: 50%;
+  }
+
+  /* PROJETOS */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px){
+  .main-projeto {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
