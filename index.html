@@ -25,8 +25,8 @@
         </div>
         <ul class="menu">
           <li><a href="#perfil">Sobre mim</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#titulo-skills">Skills</a></li>
+          <li><a href="#titulo-projetos">Projetos</a></li>
           <li><a href="#contatos">Contato</a></li>
         </ul>
 
@@ -34,8 +34,8 @@
           <div class="botao-menu"><i class="fa-solid fa-burger"></i></div>
           <ul class="menu-mobile">
             <li><a href="#perfil">Sobre mim</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#titulo-skills">Skills</a></li>
+            <li><a href="#titulo-projetos">Projetos</a></li>
             <li><a href="#contatos">Contato</a></li>
           </ul>
         </div>
@@ -44,6 +44,7 @@
 
   <main>
     
+    <button id="voltar"><i class="fa-solid fa-hand-pointer"></i></button>
 
     <section class="conteudo" id="conteudo">
       
@@ -84,7 +85,7 @@
         </section><!-- perfil -->
 
 
-        <h2>Skills</h2>
+        <h2 id="titulo-skills">Skills</h2>
         <section class="skills" id="skills">
           
           <ul class="skills-list" id="skills-list">
@@ -112,14 +113,20 @@
         </section> <!-- Skills  -->
       </div> <!-- SOBRE -->
 
+      <h2 id="titulo-projetos">Projetos</h2>
 
+      <div class="botoes-projetos">
+        <button class="todos">Todos</button>
+        <button class="projetos-reais">Reais <i class="fa-solid fa-user-tie"></i></button>
+        <button class="projetos-estudo">Estudo <i class="fa-solid fa-graduation-cap"></i></button>
+      </div>
 
       <section class="projetos" id="projetos">
 
-        <h2>Projetos Reais</h2>
+        
         <div class="main-projeto">
 
-            <div class="projeto">
+            <div class="projeto real">
               <img src="imagens/sapataria.png" alt="Imagem do site da sapataria rocha">
               <a href="https://alessandroleitte.github.io/sapatariarocha/" target="_blank">
               <h3>Sapataria Rocha</h3></a>
@@ -130,7 +137,7 @@
               
             </div>
 
-            <div class="projeto">
+            <div class="projeto real">
               <img src="imagens/formulario.jpeg" alt="Imagem do projeto form to email automation">
               <a href="https://github.com/alessandroleitte/form-to-email-automation" target="_blank">
               <h3>Form to Email Automation</h3></a>
@@ -143,10 +150,9 @@
 
         </div>
 
-        <h2>Projetos para Estudo</h2>
         <div class="main-projeto">
 
-          <div class="projeto">
+          <div class="projeto estudo">
               <img src="imagens/skyline.png" alt="Imagem do projeto Nissan Skyline GT-R R34">
               <a href="https://alessandroleitte.github.io/skyline/" target="_blank">
               <h3>Nissan Skyline GT-R R34</h3></a>
@@ -157,7 +163,7 @@
               
             </div>
 
-          <div class="projeto">
+          <div class="projeto estudo">
               <img src="imagens/testrider.png" alt="imagem do projeto TestRider">
               <a href="https://alessandroleitte.github.io/TestRider/" target="_blank">
               <h3>TestRider</h3></a>
@@ -168,7 +174,7 @@
               
             </div>  
 
-            <div class="projeto">
+            <div class="projeto estudo">
               <img src="imagens/botafogo.png" alt="Imagem do projeto História do Botafogo">
               <a href="https://alessandroleitte.github.io/botafogo/" target="_blank">
               <h3>História do Botafogo</h3></a>
@@ -180,8 +186,8 @@
             </div>
 
         </div>
-        
       </section>
+      
     </section>
 
   </main>
