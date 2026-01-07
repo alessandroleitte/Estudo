@@ -151,7 +151,7 @@ span {
   z-index: 1000;
 }
 
-#voltar {
+#voltar.show {
   opacity: 1;
   pointer-events: auto;
 }
