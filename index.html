@@ -21,12 +21,11 @@
       <nav>
         <img src="imagens/logoa.png" alt="logo Alessandro" />
         <div class="logo">
-          <h1>Alessandro Santos</h1>
+          <h1>Alessandro <span style="color: var(--hover); font-weight: bold;">Santos</span></h1>
           <span>Soluções Digitais e Gestão</span>
         </div>
         <ul class="menu">
-          <li><a href="#perfil">Sobre mim</a></li>
-          <li><a href="#titulo-skills">Skills</a></li>
+          <li><a href="#atividades">Atuação</a></li>
           <li><a href="#titulo-projetos">Projetos</a></li>
           <li><a href="#contatos">Contato</a></li>
         </ul>
@@ -34,8 +33,7 @@
         <div class="mobile">
           <div class="botao-menu"><i class="fa-solid fa-burger"></i></div>
           <ul class="menu-mobile">
-            <li><a href="#perfil">Sobre mim</a></li>
-            <li><a href="#titulo-skills">Skills</a></li>
+            <li><a href="#atividades">Atuação</a></li>
             <li><a href="#titulo-projetos">Projetos</a></li>
             <li><a href="#contatos">Contato</a></li>
           </ul>
@@ -47,8 +45,6 @@
   <main>
     
     <button id="voltar"><i class="fa-solid fa-hand-pointer"></i></button>
-
-    <section class="conteudo" id="conteudo">
 
         <!-- perfil -->
         <section id="perfil" class="perfil">
@@ -77,60 +73,40 @@
           <h3>O que eu faço</h3>
           <div class="item-atividade">
             <i class="fa-solid fa-globe"></i>
-            <h4>Soluções Digitais</h4>
-            <p>Sites profissionais, presença digital, Google Meu Negócio e anúncios online.</p>
+            <div class="descricao-atividade">
+              <h4>Soluções Digitais</h4>
+              <p>Sites profissionais, presença digital, Google Meu Negócio e anúncios online.</p>
+            </div>
           </div>
           <div class="item-atividade">
             <i class="fa-solid fa-chart-line"></i>
-            <h4>Sistemas Gerenciais</h4>
-            <p>Plataformas web para controle financeiro, cadastros, fluxo de caixa indicadores e dashboards.</p>
+            <div class="descricao-atividade">
+              <h4>Sistemas Gerenciais</h4>
+              <p>Plataformas web para controle financeiro, cadastros, fluxo de caixa indicadores e dashboards.</p>
+            </div>
           </div>
           <div class="item-atividade">
             <i class="fa-solid fa-building"></i>
-            <h4>Consultoria e Gestão</h4>
-            <p>Análise de processos e desenvolvimento de estratégias para otimização de operações.</p>
+            <div class="descricao-atividade">
+              <h4>Consultoria e Gestão</h4>
+              <p>Análise de processos e desenvolvimento de estratégias para otimização de operações.</p>
+            </div>
           </div>
           <div class="item-atividade">
             <i class="fa-solid fa-people-carry-box"></i>
-            <h4>Acompanhamento</h4>
-            <p>Suporte contínuo e evolução para que sua empresa cresça com consistência.</p>
-        </section>  <!-- atividades -->
-
-
-
-        <h2 id="titulo-skills">Skills</h2>
-        <section class="skills" id="skills">
-          
-          <ul class="skills-list" id="skills-list">
-            <li class="sombra-clara">HTML5 <i class="fa-brands fa-html5"></i></li>
-            <li class="sombra-clara">CSS3 <i class="fa-brands fa-css3-alt"></i></li>
-            <li class="sombra-clara">JavaScript <i class="fa-brands fa-square-js"></i></li>
-            <li class="sombra-clara">Git e GitHub <i class="fa-brands fa-github"></i></li>
-            <li class="sombra-clara">Analise de Dados <i class="fa-solid fa-database"></i></li>
-            <li class="sombra-clara">Comunicação <i class="fa-solid fa-comment-dollar"></i></li>
-            <li class="sombra-clara">Trabalho em equipe <i class="fa-solid fa-user-group"></i></li>
-          </ul>
-          <div id="formacao" class="formacao">
-            <h3>Formação</h3>
-            <div class="curso sombra-escura">
-              <p>Análise e desenvolvimento de sistemas</p>
-              <p>Estácio 2023</p>
-              <img src="imagens/estacio.png" />
-            </div>
-            <div class="curso">
-              <p>MBA Executivo em Gestão Empresarial</p>
-              <p>Unip 2024</p>
-              <img src="imagens/unip.png" />
+            <div class="descricao-atividade">
+              <h4>Acompanhamento</h4>
+              <p>Suporte contínuo e evolução para que sua empresa cresça com consistência.</p>
             </div>
           </div>
-        </section> <!-- Skills  -->
+        </section>  <!-- atividades -->
 
 
       <h2 id="titulo-projetos">Projetos</h2>
 
       <div class="botoes-projetos">
         <button class="todos">Todos</button>
-        <button class="projetos-reais">Reais <i class="fa-solid fa-user-tie"></i></button>
+        <button class="projetos-reais">Projetos <i class="fa-solid fa-user-tie"></i></button>
         <button class="projetos-estudo">Estudo <i class="fa-solid fa-graduation-cap"></i></button>
       </div>
 
@@ -140,81 +116,166 @@
         <div class="main-projeto">
 
             <div class="projeto real">
+
               <img src="imagens/sapataria.png" alt="Imagem do site da sapataria rocha">
-              <a href="https://alessandroleitte.github.io/sapatariarocha/" target="_blank">
-              <h3>Sapataria Rocha</h3></a>
-              <span><i class="fa-brands fa-html5"></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-js"></i></span>
-              <p>Projeto desenvolvido para a Sapataria Rocha com o objetivo de criar uma presença digital simples, clara e funcional.</p>
-              
+              <div class="titulo-projeto">
+                <a href="https://sapatariarocha.com.br/" target="_blank">
+                <h3><i class="fa-solid fa-store"></i> Sapataria Rocha</h3></a>
+                <span>Site institucional</span>
+              </div>
+
+              <div class="descricao-projeto">
+                <p>Criação de presença digital para fortalecer a marca local, facilitar o contato com clientes e aumentar a visibilidade online da empresa. Além do site, acompanhamento e otimização do Google Meu Negócio para aumentar a visibilidade local, melhorar a reputação online e atrair novos clientes da região.</p>
+                <span><i class="fa-brands fa-html5"></i></span>
+                <span><i class="fa-brands fa-css3-alt"></i></span>
+                <span><i class="fa-brands fa-js"></i></span>
+                
+              </div>  
+              <a href="https://sapatariarocha.com.br/" target="_blank">
+                  <i class="fa-solid fa-link"></i>
+              </a>  
             </div>
 
             <div class="projeto real">
-              <img src="imagens/formulario.jpeg" alt="Imagem do projeto form to email automation">
-              <a href="https://github.com/alessandroleitte/form-to-email-automation" target="_blank">
-              <h3>Form to Email Automation</h3></a>
-              <span><i class="fa-brands fa-html5"><br></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-js"></i></span>
-              <p>Projeto criado para automatizar o envio de mensagens de formulários Google diretamente para o e-mail.</p>
+              <img src="imagens/formulario.png" alt="Imagem do projeto form to email automation">
+                <a href="https://github.com/alessandroleitte/form-to-email-automation" target="_blank">
+              <div class="titulo-projeto">
+                
+                <h3><i class="fa-solid fa-envelope"></i> Automação de envio de Email</h3></a>
+                <span>Automação</span>
+              </div>
               
-            </div>            
+              <div class="descricao-projeto">
+                <p>Desenvolvimento de formulário inteligente utilizando Google Forms para coleta e envio automático de informações diretamente por e-mail, trazendo mais agilidade, organização e eficiência para os processos internos da empresa. Solução implementada na empresa Perboni S/A com foco em otimização operacional e redução de tarefas manuais.</p>
+                <span><i class="fa-brands fa-html5"><br></i></span>
+                <span><i class="fa-brands fa-css3-alt"></i></span>
+                <span><i class="fa-brands fa-js"></i></span>
+                
+              </div>
+              <a href="https://github.com/alessandroleitte/form-to-email-automation" target="_blank">
+              <i class="fa-solid fa-link"></i></a>
+            </div>
 
         </div>
 
         <div class="main-projeto">
 
           <div class="projeto estudo">
-              <img src="imagens/skyline.png" alt="Imagem do projeto Nissan Skyline GT-R R34">
+            <img src="imagens/skyline.png" alt="Imagem do projeto Nissan Skyline GT-R R34">
+                <a href="https://alessandroleitte.github.io/skyline/" target="_blank">
+            <div class="titulo-projeto">
+                
+              <h3><i class="fa-solid fa-car"></i> Skyline GT-R R34</h3></a>
+              <span>Estudo de UI/UX</span>
+            </div>
+
+              <div class="descricao-projeto">
+                <p>Projeto desenvolvido como estudo para explorar design visual e organização de conteúdo, inspirado no icônico Nissan Skyline GT-R R34.</p>
+                <span><i class="fa-brands fa-html5"></i></span>
+                <span><i class="fa-brands fa-css3-alt"></i></span>
+                <span><i class="fa-brands fa-js"></i></span>
+                
+              </div>
               <a href="https://alessandroleitte.github.io/skyline/" target="_blank">
-              <h3>Nissan Skyline GT-R R34</h3></a>
-              <span><i class="fa-brands fa-html5"></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-js"></i></span>
-              <p>Projeto desenvolvido como estudo para explorar design visual e organização de conteúdo, inspirado no icônico Nissan Skyline GT-R R34.</p>
-              
+                  <i class="fa-solid fa-link"></i></a>
             </div>
 
           <div class="projeto estudo">
-              <img src="imagens/testrider.png" alt="imagem do projeto TestRider">
+            <img src="imagens/testrider.png" alt="imagem do projeto TestRider">
+                <a href="https://alessandroleitte.github.io/TestRider/" target="_blank">
+              <div class="titulo-projeto">
+                
+                  <h3><i class="fa-solid fa-motorcycle"></i> ITestRider</h3></a>
+                <span>Estudo de interface</span>
+              </div>
+
+              <div class="descricao-projeto">
+                <p>Layout conceitual de página de um produto com foco em organização de conteúdo e experiência do usuário.</p>
+                <span><i class="fa-brands fa-html5"></i></span>
+                <span><i class="fa-brands fa-css3-alt"></i></span>
+                <span><i class="fa-brands fa-js"></i></span>
+                
+              </div>
               <a href="https://alessandroleitte.github.io/TestRider/" target="_blank">
-              <h3>TestRider</h3></a>
-              <span><i class="fa-brands fa-html5"></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-js"></i></span>
-              <p>Projeto criado como exercício prático para experimentar layouts dinâmicos e navegação interativa, inspirado no universo das motocicletas..</p>
-              
+                  <i class="fa-solid fa-link"></i>
+                </a>
             </div>  
 
             <div class="projeto estudo">
-              <img src="imagens/botafogo.png" alt="Imagem do projeto História do Botafogo">
-              <a href="https://alessandroleitte.github.io/botafogo/" target="_blank">
-              <h3>História do Botafogo</h3></a>
-              <span><i class="fa-brands fa-html5"></i></span>
-              <span><i class="fa-brands fa-css3-alt"></i></span>
-              <span><i class="fa-brands fa-js"></i></span>
-              <p>Projeto temático desenvolvido para praticar criação de layouts responsivos e identidade visual, inspirado no Botafogo de Futebol e Regatas.</p>
+              <img src="imagens/botafogo.png" alt="Imagem do projeto história do botafogo">
+                <a href="https://alessandroleitte.github.io/botafogo/" target="_blank">
+              <div class="titulo-projeto">
               
+                  <h3><i class="fa-solid fa-flag"></i> História do Botafogo</h3></a>
+                <span>site temático</span>
+              </div>
+
+              <div class="descricao-projeto">
+                <p>Página temática com foco em história,identidade visual e layout responsivo.</p>
+                <span><i class="fa-brands fa-html5"></i></span>
+                <span><i class="fa-brands fa-css3-alt"></i></span>
+                <span><i class="fa-brands fa-js"></i></span>
+                
+              </div>
+              <a href="https://alessandroleitte.github.io/botafogo/" target="_blank">
+                  <i class="fa-solid fa-link"></i></a>
             </div>
 
         </div>
-      </section>
-      
-    </section>
+      </section><!-- projetos -->
 
   </main>
 
-    <footer id="contatos">
+    <footer>
+      <section id="contatos" class="contatos">
 
-      <p>&copy;Alessandro Leitte</p>
-      <a href="https://www.linkedin.com/in/alessandro-leite-219bb71b9/"
-        target="_blank"><img src="imagens/linkedin.png" alt="icone linkedin"
-      /></a>
-      <a href="https://github.com/alessandroleitte" target="_blank"><img src="imagens/github.png" alt="icone github"
-      /></a>
-      <a href="https://wa.me/5561993437587" target="_blank"><img src="imagens/whatsapp.png"></i></a>
-      <a href="mailto:alessandroleitte@gmail.com" target="_blank"><img src="imagens/mail.png"></i></a>
+
+        <section class="logos">
+          <img src="imagens/logoa.png" alt="logo Alessandro" />
+          <h2>Alessandro <span style="color: var(--hover); font-weight: bold;">Santos</span></h2>
+            <span>Soluções digitais e Gestão</span>
+            <div class="redes">
+              <a href="https://github.com/alessandroleitte" target="_blank"><img src="imagens/github.png" alt="icone github"
+                /></a>
+                <a href="https://www.linkedin.com/in/alessandro-leite-219bb71b9/"
+                  target="_blank"><img src="imagens/linkedin.png" alt="icone linkedin"
+                /></a>
+                <a href="https://wa.me/5561993437587" target="_blank"><img src="imagens/whatsapp.png"></i></a>
+                <a href="mailto:alessandroleitte@gmail.com" target="_blank"><img src="imagens/mail.png"></i></a>
+            </div>
+        </section>
+        
+        <section class="contatos-main">
+        
+          <div class="icones-footer">
+            <p><i class="fas fa-phone"></i>    (61) 99343-7587</p>
+            <p><i class="fas fa-envelope"></i>    alessandroleitte@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i>    Brasília, DF - Brasil</p>
+          </div>
+          
+        </section>
+         <section id="formacao" class="formacao">
+              <h3>Base profissional</h3>
+              <div class="main-formacao">
+                <div class="curso">
+                  <div class="ponto"> </div>
+                  <div class="curso-info">
+                    <p>Análise e desenvolvimento de sistemas</p>
+                    <p>Estácio 2023</p>
+                  </div>
+                </div>
+                <div class="curso">
+                  <div class="ponto"> </div>
+                  <div class="curso-info">
+                    <p>MBA Executivo em Gestão Empresarial</p>
+                    <p>Unip 2024</p>
+                  </div>
+                </div>
+              </div>
+            </section><!-- formação -->
+      </section>
+
+          <p style="text-align: center; padding: 20px; color: white; font-size: 0.8em;">&copy;Alessandro Leitte. Todos os direitos reservados.</p>
 
     </footer>
 

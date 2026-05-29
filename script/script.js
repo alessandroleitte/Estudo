@@ -37,14 +37,30 @@ botaoVoltar.addEventListener("click", () => {
 function filtrarProjetos(tipo) {
   projetos.forEach(projeto => {
     if (tipo === "todos") {
-      projeto.style.display = "block";
+      projeto.style.display = "flex";
     } else {
       projeto.style.display = projeto.classList.contains(tipo)
-        ? "block"
+        ? "flex"
         : "none";
     }
   });
 }
+
+
+projetos.forEach(projeto => {
+  projeto.addEventListener("click", (evento) => {
+    
+    if (window.innerWidth >= 768) {
+      return;
+    }
+
+    if (evento.target.tagName === 'A' || evento.target.closest('a')) {
+      return; 
+    }
+
+    projeto.classList.toggle("aberto");
+  });
+});
 
 /* EVENTOS DOS BOTÕES */
 btnTodos.addEventListener("click", () => filtrarProjetos("todos"));
