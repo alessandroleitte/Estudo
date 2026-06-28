@@ -242,12 +242,8 @@ span {
   color: var(--highlight);
 }
 .dashboard {
-  position: absolute;
-  margin: 0 auto;
-  width: 60%;
-  height: 20%;
-  bottom: 0;
-}
+    display: none;
+  }
 
 
 /* perfil */
@@ -786,9 +782,4 @@ footer h3 {
   /* formação */
 
   /* FOOTER */
-}
-@media (max-height: 600px){
-  .dashboard {
-    display: none;
-  }
 }
