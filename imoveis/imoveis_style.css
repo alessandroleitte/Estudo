@@ -1,0 +1,36 @@
+:root {
+
+  --fundo: #000918;
+  --fundo-c: #f9fafb;
+  --destaques: #6f2bcd;
+  --icones:#e9e6fc;
+  --botao-principal: #2563eb;
+  --hover: #3b82f6;
+  --highlight: #fbc531;
+}
+
+.produtos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+}
+.produtos h3{
+    color: var(--destaques);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.produtos h3:hover{
+    color: var(--highlight);
+}
+.produtos p{
+    color: var(--fundo);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.produto img{
+    width: 20%;
+    height: auto;
+}
