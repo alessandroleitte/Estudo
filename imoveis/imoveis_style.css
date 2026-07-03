@@ -39,20 +39,13 @@ main {
 .perfil {
     background-color: var(--fundo);
     width: 100%;
-    max-width: 1400px;
 }
 .hero {
     width: 100%;
     text-align: justify;
 }
 .banner {
-    position: absolute;
-    bottom: -0;
-    right: 0;
-    width: 30%;
-    max-width: 300px;
-    overflow: hidden;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
 #whatsapp {
@@ -99,6 +92,11 @@ main {
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+}
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .produto h3 {
@@ -150,6 +148,16 @@ main {
     .dashboard {
         flex: 0 0 35%;
         width: 30vw;
+    }
+    .banner {
+        display: block;
+        position: absolute;
+        bottom: -0;
+        right: 0;
+        width: 30%;
+        max-width: 300px;
+        overflow: hidden;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
     }
 }
 @media (max-width: 1024px) {
