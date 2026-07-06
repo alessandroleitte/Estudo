@@ -80,11 +80,9 @@ header {
   margin: 200px auto 0 auto;
   position: absolute; 
   padding: 20px;
- background-color: var(--fundo-c);
- opacity: 0.7;
-
   border-radius: 5px;
   z-index: 999;
+  background-color: rgba(255, 255, 255, 0.696);
 
 }
 
@@ -94,10 +92,10 @@ header {
 .menu-mobile > li {
   background-color: var(--hover);
   margin: 5px auto;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   font-size: 0.8em;
-  border-bottom: 2px solid var(--highlight);
+  border: 2px solid var(--highlight);
 }
 .menu-mobile > li > a {
   color: var(--fundo-c);

@@ -384,7 +384,8 @@ h2 {
     gap: 15px;
     padding: 20px;
     border-radius: 20px;
-    width: 90%;
+    width: 80vw;
+    max-width: 550px;
     margin: 0 auto;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
