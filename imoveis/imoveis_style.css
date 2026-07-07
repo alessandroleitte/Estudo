@@ -20,7 +20,7 @@ nav img {
 }
 
 .logo {
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -42,6 +42,11 @@ header{
     background-color: var(--fundo);
     width: 100%;
 }
+
+#titulo-perfil{
+    font-size: 1em;
+    margin: 10px auto;
+}
 .hero {
     width: 100%;
     text-align: justify;
@@ -49,14 +54,12 @@ header{
 
 .botao-principal{
     width: 50%;
-    min-width: 500px;
-    margin: 10px auto 0 auto;
+    margin: 10px auto;
     text-align: center;
 }
 
-.botao-wpp-principal{
+.botao-wpp-principal, .simulador a{
     text-align: center;
-    margin: 20px auto;
     padding: 5px;
     background-color: var(--fundo-c);
     border: 3px solid var(--destaques);
@@ -67,7 +70,7 @@ header{
     font-weight: bold;
     opacity: 0.9;
 }
-.botao-wpp-principal:hover{
+.botao-wpp-principal:hover, .simulador a:hover{
     color: var(--highlight);
     background-color: rgba(255, 255, 255, 0.604);
     transition: 0.8s;
@@ -78,6 +81,18 @@ header{
     font-size: 1.8rem;
 }
 
+.simulador {
+    width: 50%;
+    margin: 30px auto 0 auto; 
+    text-align: center;
+}
+.simulador p{
+    text-align: center;
+}
+
+.simulador-box{
+    display: none;
+}
 
 .banner {
     display: none;
@@ -573,7 +588,7 @@ h2 {
     .main-produtos {
         grid-template-columns: 1fr;
     }
-    .botao-wpp-principal{
+    .botao-wpp-principal, .simulador a{
         font-size: 1rem;
     }
 
