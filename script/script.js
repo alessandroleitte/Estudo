@@ -1,6 +1,7 @@
 const menu = document.querySelector(".menu-mobile");
 const botaoMenu = document.querySelector(".botao-menu");
 const botaoVoltar = document.getElementById("voltar");
+const botaoWhatsapp = document.getElementById ("whatsapp");
 
 const btnTodos = document.querySelector(".todos");
 const btnReais = document.querySelector(".projetos-reais");
@@ -20,8 +21,10 @@ botaoMenu.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
     botaoVoltar.classList.add("show");
+    botaoWhatsapp.classList.add("show");
   } else {
     botaoVoltar.classList.remove("show");
+    botaoWhatsapp.classList.remove("show");
   }
 });
 

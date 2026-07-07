@@ -49,19 +49,35 @@ main {
 
 #whatsapp {
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
     background-color: #25D366;
     color: white;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 2rem;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+#whatsapp.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#whatsapp:hover {
+  transform: scale(1.1);
+  background-color: var(--hover);
+  color: var(--icones);
 }
 
 h2 {
@@ -453,7 +469,27 @@ h2 {
     opacity: 0.4;
     font-weight: bolder;
 }
-
+.btn-contato{
+    width: 100%;
+    text-align: center;
+}
+.btn-contato i {
+    color: #3bad74;
+    font-size: 2rem;
+}
+.btn-contato a{
+    color: var(--destaques);
+    margin-right: 10px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: var(--highlight);
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+.btn-contato a:hover {
+    color: var(--hover);
+    text-decoration: underline;
+}
 
 /* Responsividade */
 
