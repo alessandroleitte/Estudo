@@ -413,10 +413,10 @@ h2 {
 .formulario p{
     color: var(--icones);
     font-weight: bolder;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.612);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 .formulario  input::placeholder, .formulario textarea::placeholder{
-    color: #03112a47;
+    color: #03112a80;
 }
 .mensagem{
     width: 100%;
