@@ -497,6 +497,7 @@ h2 {
      .hero {
         flex: 0 0 70%;
         width: 70%;
+        padding: 30px;
     }
     .dashboard {
         flex: 0 0 35%;
