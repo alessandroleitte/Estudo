@@ -81,7 +81,6 @@ const dadosImoveis = {
         imagens: [
             "imagens/aguias/LOGO_RECANTO_AGUIAS.png",
             "imagens/aguias/FACHADA.jpg",
-            "imagens/aguias/GUARITA.jpg",
             "imagens/aguias/PISCINA.jpg",
             "imagens/aguias/FRENTE.jpg"
         ]
@@ -165,11 +164,11 @@ const dadosImoveis = {
         `,
         imagens: [
             "imagens/singulare/logo-singulare.png",
-            "imagens/singulare/area_lazer.png",
-            "imagens/singulare/entrada.png",
-            "imagens/singulare/fachada.png",
-            "imagens/singulare/esp_gurmet.png",
-            "imagens/singulare/piscina.png"
+            "imagens/singulare/area_lazer.webp",
+            "imagens/singulare/entrada.webp",
+            "imagens/singulare/fachada.webp",
+            "imagens/singulare/esp_gurmet.webp",
+            "imagens/singulare/piscina.webp"
         ]
     }
 };
