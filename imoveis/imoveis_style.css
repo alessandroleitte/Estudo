@@ -69,6 +69,7 @@ header{
     font-size: 1.5rem;
     font-weight: bold;
     opacity: 0.9;
+    min-width: 300px
 }
 .botao-wpp-principal:hover, .simulador a:hover{
     color: var(--highlight);
@@ -88,6 +89,7 @@ header{
 }
 .simulador p{
     text-align: center;
+    margin: -5px;
 }
 
 .simulador-box{
@@ -545,6 +547,9 @@ h2 {
 /* Responsividade */
 
 @media (min-width: 768px) {
+    #titulo-perfil{
+        font-size: 2em;
+    }
      .hero {
         flex: 0 0 70%;
         width: 70%;
