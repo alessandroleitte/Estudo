@@ -573,4 +573,11 @@ h2 {
     .main-produtos {
         grid-template-columns: 1fr;
     }
+    .botao-wpp-principal{
+        font-size: 1rem;
+    }
+
+    .botao-wpp-principal i{
+        font-size: 1.2rem;
+    }
 }
