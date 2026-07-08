@@ -97,9 +97,7 @@ header{
     transform:translate(-50%, -50%);
 
     width:70vw;
-    height:70vh;
-    max-width: 500px;
-    
+    height:70vh;  
 
     background: var(--botao-principal);
     z-index:99999;
@@ -661,6 +659,7 @@ h2 {
     }
     .parcela-modal{
         max-height: 500px;
+        max-width: 500px;
     }
     .banner {
         display: block;
@@ -704,7 +703,8 @@ h2 {
         font-size: 1.2rem;
     }
     .parcela-modal{
-        width: 90%;
+        width: 95%;
         height: 95%;
+        padding: 10px;
     }
 }
