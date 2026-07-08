@@ -99,7 +99,7 @@ header{
     width:70vw;
     height:70vh;
     max-width: 500px;
-    max-height: 500px;
+    
 
     background: var(--botao-principal);
     z-index:99999;
@@ -659,6 +659,9 @@ h2 {
         flex: 0 0 35%;
         width: 30vw;
     }
+    .parcela-modal{
+        max-height: 500px;
+    }
     .banner {
         display: block;
         position: absolute;
@@ -699,5 +702,9 @@ h2 {
 
     .botao-wpp-principal i{
         font-size: 1.2rem;
+    }
+    .parcela-modal{
+        width: 90%;
+        height: 95%;
     }
 }
