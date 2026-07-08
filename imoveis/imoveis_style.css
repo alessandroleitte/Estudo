@@ -707,4 +707,6 @@ h2 {
         height: 95%;
         padding: 10px;
     }
-}
+    .hero p{
+        text-align: center;
+    }
