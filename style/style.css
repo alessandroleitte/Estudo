@@ -56,10 +56,8 @@ header {
 
 .mobile {
   margin: 0 auto;
-  padding: 10px;
   display: flex;
   flex-flow: column wrap;
-  width: 70%;
   justify-content: center;
   text-align: center;
 }
@@ -72,15 +70,25 @@ header {
 }
 
 .menu-mobile {
+  height: 120px;
+  width: 200px;
+
   display: none;
   list-style: none;
+
+  background-color: var(--icones);
   flex-flow: column wrap;
   justify-content: center;
   text-align: center;
-  margin: 200px auto 0 auto;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin-top: 150px;
+
   position: absolute; 
-  padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;  
+  padding: 5px;
   z-index: 999;
 }
 
@@ -89,11 +97,11 @@ header {
 }
 .menu-mobile > li {
   background-color: var(--hover);
-  margin: 5px auto;
+  margin-bottom: 5px;
+  width: 100%;
   padding: 3px;
-  border-radius: 10px;
   font-size: 0.8em;
-  border: 2px solid var(--highlight);
+  border-bottom: 2px solid var(--highlight);
 }
 .menu-mobile > li:hover{
   background-color: var(--destaques);

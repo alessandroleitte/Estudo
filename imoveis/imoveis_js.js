@@ -322,3 +322,85 @@ document.addEventListener("DOMContentLoaded", () => {
             form.querySelector('button[type="submit"]').textContent = "Enviar";
         });
     });
+
+    const parcelaModal = document.getElementById("parcelaModal");
+
+document
+.getElementById("simulador")
+.addEventListener("click",function(e){
+
+    e.preventDefault();
+
+    parcelaModal.style.display="block";
+
+});
+
+document
+.querySelector(".parcela-fechar")
+.addEventListener("click",function(){
+
+    parcelaModal.style.display="none";
+
+});
+
+window.addEventListener("click",function(e){
+
+    if(e.target===parcelaModal){
+
+        parcelaModal.style.display="none";
+
+    }
+
+});
+
+document
+.getElementById("parcelaBtnCalcular")
+.addEventListener("click",calcularParcela);
+
+function calcularParcela(){
+
+    const renda = parseFloat(document.getElementById("parcelaRenda").value);
+
+    if(isNaN(renda) || renda<=0){
+
+        alert("Informe uma renda válida.");
+
+        return;
+
+    }
+
+    const parcela = renda * 0.30;
+
+    document.getElementById("parcelaResultado").innerHTML=`
+
+        <h3 style="color:var(--fundo); text-align: center; font-size: 1.5em;">
+            ${parcela.toLocaleString('pt-BR',{
+                style:'currency',
+                currency:'BRL'
+            })}
+        </h3>
+
+        <p>
+            Com base nos critérios gerais utilizados nos financiamentos da Caixa, sua parcela máxima estimada é de aproximadamente:
+            <strong>${parcela.toLocaleString('pt-BR',{
+                style:'currency',
+                currency:'BRL'
+            })}</strong>.
+        </p>
+
+        <small>
+            Este cálculo é apenas uma estimativa e não representa uma aprovação de crédito.
+        </small>
+
+        <br><br>
+
+        <a class="btn-whatsapp"
+        target="_blank"
+        href="https://wa.me/5561993437587?text=Olá! Minha renda é de R$ ${renda.toLocaleString('pt-BR')} e fiz a simulação no seu site. Gostaria de saber quais imóveis se encaixam no meu perfil.">
+            
+        📲 Fazer uma simulação completa
+        
+        </a>
+    `;
+
+}

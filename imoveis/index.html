@@ -62,25 +62,34 @@
                     
 
                 <a href="https://wa.me/5561993437587" target="_blank"><i class="fa-brands fa-whatsapp" id="whatsapp"> </i></a>
-
-                <section class="simulador">
-                            <a href="#" id="simulador"><i class="fa-solid fa-money-bill-1-wave"></i> Simule sua Parcela</a>
-                            <p style="font-size: 0.8em;">Descubra rapidamente o valor aproximado da sua parcela.</p>
-
-                            <div class="simulador-box">
-                                
-                                <input type="number" id="renda" placeholder="Digite sua renda mensal">
-
-                                <button onclick="calcularParcela()">
-                                    Calcular
-                                </button>
-
-                                <div id="resultado"></div>
-                            </div>
-                </section>
-              </div>
-              
                 
+                
+                
+                <div class="parcela-modal-content">
+
+                    <a href="#" id="simulador"><i class="fa-solid fa-money-bill-1-wave"></i> Simule sua Parcela</a>
+
+                <div id="parcelaModal" class="parcela-modal">
+                    <span class="parcela-fechar" style="color: red; font-size: 2em;"> &times;</span>
+
+                    <input
+                        type="number"
+                        id="parcelaRenda"
+                        placeholder="Ex.: 3500">
+
+                    <button id="parcelaBtnCalcular">
+                        Calcular
+                    </button>
+
+                    <p style="font-size: 1em; font-weight: bolder;">Informe sua renda bruta mensal.</p>
+
+                    <div id="parcelaResultado"></div>
+
+                </div>
+
+            </div>
+            </div>
+              
               
               <img src="imagens/alessandro.png" alt="banner" class="banner" />
 

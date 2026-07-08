@@ -58,10 +58,10 @@ header{
     text-align: center;
 }
 
-.botao-wpp-principal, .simulador a{
+.botao-wpp-principal{
     text-align: center;
-    padding: 5px;
-    background-color: var(--fundo-c);
+    padding: 7px;
+    
     border: 3px solid var(--destaques);
     border-radius: 20px;
     box-shadow: 3px 2px 5px var(--hover);
@@ -71,33 +71,134 @@ header{
     opacity: 0.9;
     min-width: 300px
 }
-.botao-wpp-principal:hover, .simulador a:hover{
+.botao-wpp-principal:hover{
     color: var(--highlight);
-    background-color: rgba(255, 255, 255, 0.604);
+    background-color: var(--botao-principal);
     transition: 0.8s;
 }
 
-.botao-wpp-principal i{
+.botao-wpp-principal i, .parcela-modal-content i{
     color: #25D366;
-    font-size: 1.8rem;
-}
-
-.simulador {
-    width: 50%;
-    margin: 30px auto 0 auto; 
-    text-align: center;
-}
-.simulador p{
-    text-align: center;
-    margin: -5px;
-}
-
-.simulador-box{
-    display: none;
+    font-size: 1.3rem;
 }
 
 .banner {
     display: none;
+}
+
+.parcela-modal{
+
+    display:none;
+    position:fixed;
+    padding: 10px;
+
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+    width:70vw;
+    height:70vh;
+    max-width: 500px;
+    max-height: 400px;
+
+    background: var(--botao-principal);
+    z-index:99999;
+
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 12px var(--highlight);
+
+}
+
+.parcela-modal input{
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.parcela-modal button{
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+    color: var(--fundo);
+    font-weight: bold;
+    background-color: var(--highlight);
+    border: 2px solid var(--icones);
+}
+
+.parcela-modal button:hover{
+    background-color: var(--destaques);
+    transition: 0.8s;
+}
+
+.parcela-modal span{
+    color: var(--fundo);
+    font-weight: bolder;
+    font-size: 1em;
+}
+.parcela-modal p{
+    text-align: center;
+}
+.parcela-modal small{
+    font-size: 0.8em;
+    padding: 5px;
+    color: var(--fundo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.parcela-modal-content{
+
+    background: var(--icones);
+    width:90%;
+    max-width:220px;
+    margin:30px auto;
+    padding:5px;
+    border-radius:15px;
+    text-align:center;
+    position:relative;
+    animation:parcelaFade .3s;
+    box-shadow: 3px 2px 5px var(--hover);
+
+}
+.parcela-modal-content a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--fundo);
+}
+.parcela-modal-content a:hover{
+    color: var(--highlight);
+    transition: 0.5s;
+}
+
+@keyframes parcelaFade{
+
+    from{
+        transform:translateY(-20px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+}
+
+.parcela-fechar{
+
+    position:absolute;
+    right:10px;
+    top:10px;
+    cursor:pointer;
+
+}
+
+#parcelaResultado{
+
+    margin-top:20px;
+
 }
 
 #whatsapp {
@@ -118,7 +219,6 @@ header{
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 1000;
 }
 
