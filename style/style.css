@@ -540,10 +540,164 @@ footer h3 {
   font-size: 0.8em;
 }
 
+.portal-imoveis{
 
-/* formação */
+    width:90%;
+    max-width:1200px;
 
-/* FOOTER */
+    margin:40px auto;
+
+}
+
+.portal-container{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+
+    padding:30px;
+
+    border-radius:16px;
+
+    background:var(--icones);
+    
+
+    border:1px solid rgba(111,43,205,.3);
+
+}
+
+.portal-info{
+
+    flex:2;
+
+}
+
+.portal-tag{
+
+    display:inline-block;
+
+    color:var(--destaques);
+
+    font-size:.8rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.portal-info h2{
+
+    color:var(--fundo);
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.portal-info p{
+
+    color: var(--hover);
+
+    line-height:1.7;
+
+    max-width:600px;
+
+}
+
+.portal-beneficios{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+}
+
+.beneficio{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:var(--fundo-c);
+    text-shadow: 1px 2px 2px var(--fundo);
+
+}
+
+.beneficio i{
+
+    color:var(--highlight);
+
+    width:20px;
+
+}
+
+.portal-btn{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:var(--botao-principal);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 22px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+    transition:.3s;
+
+}
+
+.portal-btn:hover{
+
+    background:var(--hover);
+
+    transform:translateY(-2px);
+
+}
+
+@media(max-width:900px){
+
+    .portal-container{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+    .portal-info h2{
+
+        font-size:1.6rem;
+
+    }
+
+    .portal-beneficios{
+
+        width:100%;
+        align-items:center;
+
+    }
+
+    .portal-btn{
+
+        width:100%;
+        justify-content:center;
+
+    }
+
+}
 
 @media (min-width: 768px) {
   /* MENU */
@@ -725,6 +879,8 @@ footer h3 {
     }
 
   /* projetos */
+
+
 
   /* FOOTER */
   footer {
