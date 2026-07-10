@@ -21,7 +21,7 @@ const dadosImoveis = {
     ikeda: {
         titulo: "Total Ville Ikeda – Ceilândia",
         descricaoLonga: `O Total Ville Ikeda oferece tudo o que sua família precisa para morar com conforto, segurança e praticidade em Ceilândia - DF.
-        O empreendimento está enquadrado nos programas Minha Casa Minha Vida e Morar DF, atendendo famílias com renda a partir de R$ 2.500,00.
+        O empreendimento está enquadrado nos programas Minha Casa Minha Vida e Morar DF.
         São apartamentos de 2 quartos e 2 quartos com suíte, em condomínio fechado com guarita 24 horas e uma estrutura completa de lazer composta por piscinas, playground, salão de festas, churrasqueiras, quadra poliesportiva, quadra gramada e espaço pet.
         Previsão de entrega
         Condomínio 1 – Agosto/2026
@@ -58,7 +58,7 @@ const dadosImoveis = {
         titulo: "Recanto das Garças – Recanto das Emas",
         descricaoLonga: `O Recanto das Garças é ideal para famílias que procuram mais espaço e qualidade de vida.
         Localizado no Recanto das Emas - DF, o empreendimento oferece apartamentos de 3 quartos com suíte, em condomínio fechado com guarita 24 horas, playground, áreas de convivência e churrasqueiras.
-        Enquadrado nos programas Minha Casa Minha Vida e Morar DF, atende famílias com renda a partir de R$ 4.500,00.
+        Enquadrado nos programas Minha Casa Minha Vida e Morar DF.
         Previsão de entrega
         Fevereiro/2027`,
         imagens: [
@@ -74,7 +74,7 @@ const dadosImoveis = {
         descricaoLonga: `Recanto das Águias
         Pensado para quem deseja sair do aluguel, o Recanto das Águias oferece apartamentos de 1 quarto em um condomínio moderno localizado no Recanto das Emas - DF.
         O condomínio possui guarita 24 horas, piscinas, playground, salão de festas, churrasqueiras e diversas opções de lazer para o dia a dia.
-        O empreendimento faz parte dos programas Minha Casa Minha Vida e Morar DF, para famílias com renda a partir de R$ 2.000,00.
+        O empreendimento faz parte dos programas Minha Casa Minha Vida e Morar DF.
         Previsão de entrega
         Setembro/2027
         `,
