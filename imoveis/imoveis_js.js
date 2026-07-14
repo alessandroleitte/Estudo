@@ -281,6 +281,68 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// =======================
+// FILTRO DE EMPREENDIMENTOS
+// =======================
+
+const botoesFiltro = document.querySelectorAll(".btn-filtro");
+const produtos = document.querySelectorAll(".produto");
+
+botoesFiltro.forEach(botao => {
+
+    botao.addEventListener("click", function () {
+
+        // Remove o botão ativo
+        botoesFiltro.forEach(btn => btn.classList.remove("ativo"));
+        this.classList.add("ativo");
+
+        const filtro = this.dataset.filtro;
+
+        produtos.forEach(produto => {
+
+            if (filtro === "todos") {
+
+                produto.style.display = "flex";
+
+            } else if (produto.classList.contains(filtro)) {
+
+                produto.style.display = "flex";
+
+            } else {
+
+                produto.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
+
+// Pagamentos
+
+const pagamentos = document.querySelectorAll(".pagamento");
+
+pagamentos.forEach((pagamento)=>{
+
+    const titulo = pagamento.querySelector(".pagamento-titulo");
+
+    titulo.addEventListener("click",()=>{
+
+        pagamentos.forEach((item)=>{
+
+            if(item !== pagamento){
+                item.classList.remove("ativo");
+            }
+
+        });
+
+        pagamento.classList.toggle("ativo");
+
+    });
+
+});
 
 //Formulário
 

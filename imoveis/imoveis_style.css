@@ -231,6 +231,27 @@ header{
   color: var(--icones);
 }
 
+.botao-empreendimentos{
+    color: #000918;
+    background-color: var(--botao-principal);
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px var(--fundo);
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.botao-empreendimentos:hover{
+    background:var(--hover);
+    transform:translateY(-2px);
+}
+
 h2 {
     color: var(--hover);
     font-size: 2rem;
@@ -478,6 +499,59 @@ h2 {
     background-color: #20ba59;
 }
 
+.filtros-empreendimentos{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn-filtro{
+
+    padding:12px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    background:#ffffff;
+
+    color:var(--fundo);
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.btn-filtro:hover{
+
+    transform:translateY(-2px);
+
+    background:var(--hover);
+
+    color:#fff;
+
+}
+
+.btn-filtro.ativo{
+
+    background:var(--botao-principal);
+
+    color:#fff;
+
+}
+
 .divisoria{
     width:90%;
     margin: 50px auto;
@@ -543,6 +617,33 @@ h2 {
     border-bottom: 2px solid var(--destaques);
     margin-bottom: 20px;
     border-radius: 20px;
+}
+
+.pagamento-titulo{
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    user-select:none;
+}
+
+.pagamento-conteudo{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.pagamento.ativo .pagamento-conteudo{
+    max-height:3000px;
+}
+
+.icone-accordion{
+    font-size:1.8rem;
+    transition:.3s;
+}
+
+.pagamento.ativo .icone-accordion{
+    transform:rotate(45deg);
 }
 
 .formulario{
