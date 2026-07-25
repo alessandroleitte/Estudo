@@ -233,13 +233,14 @@ header{
 
 .botao-empreendimentos{
     color: var(--icones);
-    background-color: var(--fundo);
+    background-color: var(--highlight);
     width: 100%;
     min-width: 300px;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 1px 1px 5px var(--hover);
+    box-shadow: 2px 2px 5px var(--fundo);
+    text-shadow: 2px 2px 2px var(--fundo);
     padding: 5px;
     border-radius: 5px;
     font-size: 1em;
@@ -247,7 +248,7 @@ header{
     text-decoration: none;
 }
 .botao-empreendimentos:hover{
-    background:var(--hover);
+    background:var(--destaques);
     transform:translateY(-2px);
 }
 
